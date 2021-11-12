@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context="com.example.th3_sagittarian.gatewayrail.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textStyle="bold|italic"
+    android:textColor="@color/colorPrimary"
+    android:text="Import View"/>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/barchart"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Tabular"
+            android:textColor="#ffffff"
+
+            />
+
+        <Button
+            android:id="@+id/ft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Graph"
+            android:textColor="#ffffff"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
